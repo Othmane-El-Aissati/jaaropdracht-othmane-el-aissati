@@ -30,6 +30,14 @@ export const query = graphql`
         challengeRating
         armorClass
         description
+        image {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+          altText
+        }
       }
     }
   }
