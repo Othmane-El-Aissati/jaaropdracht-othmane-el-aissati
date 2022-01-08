@@ -18,5 +18,16 @@ module.exports = {
         url: "http://dnd-showroom.local/graphql",
       },
     },
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        /*
+         * De volledige URL van je Headless WordPress site's GraphQL API.
+         * Voorbeeld : "https://www.example-site.com/graphql"
+         */
+        url: "http://artist-agency-2021.local/graphql",
+      },
+    },
   ],
 };
