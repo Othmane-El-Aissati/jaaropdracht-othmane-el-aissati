@@ -1,39 +1,9 @@
-.container {
-  width: 90%;
-  max-width: 1080px;
-  margin: auto;
-  font-family: sans-serif;
-}
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em sans-serif, georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-  background-color: #000;
-}
-body {
-  overflow: hidden;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-  font-family: sans-serif, georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
-
-.container {
-  width: 90%;
-  max-width: 1080px;
-  margin: auto;
-  font-family: sans-serif;
+html{
+  background: url('../images/backgroundImage.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .nav {
@@ -77,17 +47,45 @@ body {
   margin-right: auto;
 }
 
-.site-title::after {
-  content: ".";
-  position: absolute;
-  right: -5px;
-  bottom: 35px;
-  font-size: 2rem;
-  font-family: serif;
-  color: #37ba83;
-  margin-right: auto;
+.centerTitle{
+  color: white;
+  text-align: center;
 }
 
-.nav-link-item {
-  padding-right: 2rem;
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  color: white;
+  width: 90%;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 720px) {
+  .nav {
+    display: contents;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: inherit;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-link-text {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    display: block;
+  }
 }
