@@ -66,6 +66,12 @@ html{
   font-family: sans-serif;
 }
 
+.textStyle{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
 @media only screen and (max-width: 720px) {
   .nav {
     display: contents;
