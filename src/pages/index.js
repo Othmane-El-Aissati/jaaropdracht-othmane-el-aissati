@@ -8,7 +8,7 @@ const IndexPage = () => {
     <Layout pageTitle="Welcome to the DnD showroom!">
       <p>Home page van de dnd showroom website</p>
       <StaticImage
-        alt="Een Gatsby astronaut"
+        alt="De home image"
         src="../images/homeImage.jpg"
       />
       </Layout>
