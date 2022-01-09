@@ -3,18 +3,19 @@ import { graphql } from "gatsby"
 import Layout from '../components/layout'
 import Artist from "../components/artist"
 import { StaticImage } from 'gatsby-plugin-image'
-import {imageCenter, textStyle} from '../components/layout.module.css'
+import {imageCenterDiv, textStyle} from '../components/layout.module.css'
 
 const IndexPage = ({data: {wpPage: { homePage },},}) => {
   return (
     <main>
     <Layout pageTitle="Welcome to the DnD showroom!">
       {/*<p style={{textAlign: "center"}}>Home page van de dnd showroom website</p>*/}
+      <div className={imageCenterDiv}>
       <StaticImage
         alt="De home image"
         src="../images/homeImage.jpg"
-        className={imageCenter}
       />
+      </div>
       <p className={textStyle}>This website is made to get some fun facts about DnD monsters. Hopefully you'll find some fun monsters and get some inspiration for future sessions.</p>
       </Layout>
     <div className={textStyle}>

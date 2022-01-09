@@ -59,6 +59,14 @@ html{
   width: 50%;
 }
 
+.imageCenterDiv {
+  display: flex;
+  align-content: center;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+}
+
 .container {
   color: white;
   width: 90%;
