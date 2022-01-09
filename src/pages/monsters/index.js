@@ -9,7 +9,7 @@ const MonstersPage = ({data: {allWpMonster: {edges}}}) => {
         const monster = item.node.monsterMeta;
         const slug = item.node.slug;
         return <Link to={`/monsters/${slug}`}>
-          <p key={item.node.id}>{monster.monsterName} {monster.hitPoints} {monster.alignment}</p>
+          <p key={item.node.id}>{monster.monsterName}</p>
         </Link>
       })}
     </Layout>
@@ -23,8 +23,6 @@ query {
         node {
           monsterMeta {
             monsterName
-            hitPoints
-            alignment
           }
           id
           slug

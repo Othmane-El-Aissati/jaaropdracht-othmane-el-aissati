@@ -6,16 +6,17 @@ import Layout from '../../components/layout'
 const MonsterPage = ({data: {wpMonster: {monsterMeta: monster}}}) => {
   const image = getImage(monster.image.localFile)
   return (
-    <Layout pageTitle="Monsters Template">
+    <Layout pageTitle={monster.monsterName}>
       <div>
-      <h3>{monster.monsterName}</h3>
       <GatsbyImage image={image} alt={monster.image.altText} />
-      <h1>AC: {monster.armorClass} <br></br> <br></br> CR: {monster.challengeRating}</h1>
-      <div dangerouslySetInnerHTML={{__html: monster.description}} />
-      <p>Hitpoints: {monster.hitPoints}</p>
-      <p>Alignment: {monster.alignment}</p>
+      <h1>HP: {monster.hitPoints} <br></br> <br></br> AC: {monster.armorClass} <br></br> <br></br> CR: {monster.challengeRating}</h1>
       <p>Size: {monster.size}</p>
+      <p>Alignment: {monster.alignment}</p>
       <p>Environment: {monster.environment}</p>
+      <br></br>
+      <p>Description:</p>
+      <div dangerouslySetInnerHTML={{__html: monster.description}} />
+      <br></br>
     </div>
     </Layout>
   )
