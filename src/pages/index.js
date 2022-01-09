@@ -15,6 +15,7 @@ const IndexPage = ({data: {wpPage: { homePage },},}) => {
         src="../images/homeImage.jpg"
         className={imageCenter}
       />
+      <p className={textStyle}>This website is made to get some fun facts about DnD monsters. Hopefully you'll find some fun monsters and get some inspiration for future sessions.</p>
       </Layout>
     <div className={textStyle}>
       <h1>Featured monsters</h1>
